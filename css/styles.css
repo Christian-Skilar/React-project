@@ -1,0 +1,130 @@
+.cardHover {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  border-radius: 5px;
+  margin: 50px 20px;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+.cardHover:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  color: #02b268;
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 14px 15px 8px rgba(0, 0, 0, 0.43);
+  box-shadow: 0px 10px 13px -7px #000000, 0px 14px 15px 8px rgba(0, 0, 0, 0.43);
+  text-decoration: none;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.character-detail {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+}
+
+img {
+  width: 300px;
+  border-radius: 5px;
+}
+
+.container {
+  padding: 0;
+}
+
+nav {
+  margin-bottom: 100px;
+}
+
+nav a {
+  margin: 10px 20px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  padding: 45px 15px;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 100px auto;
+  width: 70%;
+}
+
+input {
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+select {
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid black;
+  color: gray;
+}
+
+textarea {
+  margin-top: 50px;
+}
+
+button {
+  background: #02b268;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 50px 0;
+  width: 20%;
+  padding: 10px 0;
+  -webkit-transition: 150ms;
+  transition: 150ms;
+}
+
+button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0px 10px 13px -13px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.error {
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */

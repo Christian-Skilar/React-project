@@ -1,0 +1,22 @@
+input {
+	margin-top: 20px;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+.login-form {
+	width: 50%;
+}
+
+.login-btn {
+	width: 100px;
+	margin: 10px;
+}
+
+.form-error {
+	color: #e80f00;
+	background: rgba(232, 15, 0, .2);
+	border: 1px solid #e80f00;
+	padding: 15px 10px;
+}

@@ -1,0 +1,53 @@
+form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin: 100px auto;
+	width: 70%;
+}
+
+.contact {
+	margin-top: 20px;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+select {
+	margin-top: 20px;
+	padding: 5px;
+	border: none;
+	border-bottom: 1px solid black;
+	color: gray;
+}
+
+textarea {
+	margin-top: 50px;
+}
+
+button {
+	background: #02b268;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	margin: 50px 0;
+	width: 20%;
+	padding: 10px 0;
+	transition: 150ms;
+}
+
+button:hover {
+	transform: scale(1.05);
+	-webkit-box-shadow: 0px 10px 13px -7px #000000,
+		5px 5px 15px 5px rgba(0, 0, 0, 0);
+	box-shadow: 0px 10px 13px -13px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+button:active {
+	transform: scale(1.0);
+	box-shadow: none;
+}
+
+.error {
+	color: red;
+}
