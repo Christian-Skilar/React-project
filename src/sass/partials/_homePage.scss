@@ -1,4 +1,5 @@
 .home-text {
+	width: 80%;
 	background: rgba(24, 24, 24, 0.9);
 	padding: 20px;
 	border-radius: 5px;
@@ -6,5 +7,13 @@
 	p {
 		font-size: 20px;
 		line-height: 35px;
+	}
+}
+
+@media only screen and (max-width: 520px) {
+	.home-text {
+		width: 100%;
+		border-radius: 0;
+		padding: 30px;
 	}
 }

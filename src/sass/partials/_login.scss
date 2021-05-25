@@ -20,3 +20,9 @@ input {
 	border: 1px solid #e80f00;
 	padding: 15px 10px;
 }
+
+@media only screen and (max-width: 850px) {
+	.login-form {
+		width: 80%;
+	}
+}

@@ -31,9 +31,6 @@ function About() {
 
                 <div className="flex">
                     <div>
-                        <img src={RickAndMorty} alt="rick and morty"></img>
-                    </div>
-                    <div>
                         <p>
                             Rick and Morty, together make the weirdest duo and are involved in weird shit, 
                             all the time. Grandpa Rick tells queer, contradictory things to his grandson, 
@@ -49,9 +46,15 @@ function About() {
                         whose naïve but grounded moral compass plays counterpoint to Rick’s Machiavellian ego.
                         </p>
                     </div>
+                    <div>
+                        <img src={RickAndMorty} alt="rick and morty"></img>
+                    </div>
                 </div>
 
                 <div className="flex">
+                <div>
+                        <img src={RmAbout} alt="rick and morty"></img>
+                    </div>
                     <div>
                         <p>
                         Animation for the show is done using Toon Boom Harmony, post-production work is done in Adobe After Effects, 
@@ -67,9 +70,6 @@ function About() {
                         all of the creators are kind of the same age, and they are all inspired by The Simpsons and all these other shows we're kind of 
                         subconsciously tapping into.
                         </p>
-                    </div>
-                    <div>
-                        <img src={RmAbout} alt="rick and morty"></img>
                     </div>
                 </div>
                 <img src={Boys} className="last-image" alt="rick and morty"></img>

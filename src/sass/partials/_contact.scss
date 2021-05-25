@@ -15,8 +15,10 @@ form {
 	background: #232423;
 
 	input {
+		width: 100%;
 		background: #232423;
 		color: white;
+		font-size: 20px;
 	}
 }
 
@@ -34,6 +36,8 @@ select {
 	border-bottom: 1px solid black;
 	color: gray;
 	background: #232423;
+	font-size: 20px;
+	width: 100%;
 }
 
 textarea {
@@ -41,31 +45,66 @@ textarea {
 	background: #232423;
 	color: white;
 	border: 1px solid black;
+	font-size: 20px;
+	width: 100%;
 }
 
 button {
-	background: #02b268;
+	font-family: 'Odibee Sans';
+	letter-spacing: 4px;
+	background: #75e016;
 	color: white;
-	border: none;
+	cursor: pointer;
+	font-size: 25px;
+	text-transform: uppercase;
+	padding: 5px 50px;
+	margin-top: 30px;
+	border: 0;
+	transition: all 400ms;
 	border-radius: 5px;
-	margin: 50px 0;
-	width: 20%;
-	padding: 10px 0;
-	transition: 150ms;
-}
+	width: 200px;
+	position: relative;
 
-button:hover {
-	transform: scale(1.05);
-	-webkit-box-shadow: 0px 10px 13px -7px #000000,
-		5px 5px 15px 5px rgba(0, 0, 0, 0);
-	box-shadow: 0px 10px 13px -13px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
-}
+	&::after {
+		content: "\279F";
+		position: absolute;
+		left: 45%;
+		top: 10%;
+		right: 5%;
+		bottom: 0;
+		opacity: 0;
+	}
 
-button:active {
-	transform: scale(1.0);
-	box-shadow: none;
+	&:hover {
+		transition: all 0.5s;
+		border-radius: 5px;
+		padding: 5px 70px 5px 50px;
+		text-decoration: none;
+
+		&::after {
+			opacity: 1;
+			transition: all 0.5s;
+		}
+	}
 }
 
 .error {
 	color: red;
+}
+
+@media only screen and (max-width: 1155px) {
+	.form-container {
+		width: 80%;
+		padding: 10px 0;
+	}
+
+	form {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 1070px) {
+	.form-container {
+		width: 90%;
+	}
 }
