@@ -5,6 +5,7 @@ import axios from "axios";
 import FormError from "./FormError";
 import { BASE_URL, TOKEN_PATH } from "../../constants/Api";
 import AuthContext from "../context/AuthContext";
+import Footer from "../../components/layout/Footer"
 
 const url = BASE_URL + TOKEN_PATH;
 
@@ -36,7 +37,8 @@ export default function LoginForm() {
 
 	return (
 		<>
-			<form className="login-form" onSubmit={handleSubmit(onSubmit)}>
+		<div className="form-container">
+		<form className="login-form" onSubmit={handleSubmit(onSubmit)}>
 				{loginError && <FormError>Wrong username or password</FormError>}
 		
 	
@@ -48,8 +50,9 @@ export default function LoginForm() {
 						{errors.password && <span className="error"></span>}
 
 					<button>{submitting ? "Loggin in..." : "Login"}</button>
-		
 			</form>
+		</div>
+		<Footer />
 		</>
 	);
 }

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { API } from "../constants/Api";
+import Footer from "../components/layout/Footer"
 
 function CharacterDetail(props) {
 	console.log(props);
@@ -65,6 +66,7 @@ function CharacterDetail(props) {
 
 
 	return (
+		<>
 		<div className="detail-container">
 			<h1 className="character-name">{character.name}</h1>
 			<div className="character-detail">
@@ -80,6 +82,10 @@ function CharacterDetail(props) {
 				</div>
 			</div>
 		</div>
+
+		<Footer />
+		</>
+
 	);
 }
 

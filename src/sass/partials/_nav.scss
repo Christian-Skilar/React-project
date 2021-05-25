@@ -1,27 +1,104 @@
+.logo {
+	margin: 0 100px;
+}
+
+.navbar-dark .navbar-toggler {
+	border-color: transparent;
+}
+
+.bg-dark {
+	background-color: #232423 !important;
+	height: 200px;
+}
+
+// ---------- NAVIGATION LINKS ---------- /
 nav {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-bottom: 100px;
-	background: #252525;
-	padding: 20px;
-}
-
-nav a {
-	font-size: 20px;
-	padding: 10px;
-	margin: 10px;
-	color: white;
-}
-
-nav a:hover {
-	color: lightgrey;
-	text-decoration: none;
-}
-
-a {
-	color: black;
-	text-decoration: none;
+	font-family: 'Poiret One';
 	font-size: 25px;
-	padding: 45px 15px;
+	letter-spacing: 3px;
+	width: 100%;
+	margin: 0 auto;
+	background: #232423;
+	padding: 10px 0;
+}
+nav ul {
+	list-style: none;
+	text-align: left;
+}
+nav ul li {
+	display: inline-block;
+}
+nav ul li a {
+	display: block;
+	padding: 15px;
+	text-decoration: none;
+	color: white;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin: 0 10px;
+}
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+	transition: all .5s;
+}
+nav ul li a:hover {
+	color: #999999;
+	text-decoration: none;
+}
+
+/* stroke */
+
+nav.stroke ul {
+	padding: 0;
+}
+
+nav.stroke ul li:last-child {
+	float: right;
+	text-align: center;
+	cursor: pointer;
+}
+
+nav.stroke ul li a {
+	position: relative;
+}
+nav.stroke ul li a:after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	width: 0%;
+	content: '.';
+	color: transparent;
+	background: #75e016;
+	height: 2px;
+}
+nav.stroke ul li a:hover:after {
+	width: 60%;
+}
+
+//
+// MEDIA QUERIES ---------------
+
+@media only screen and (max-width: 1051px) {
+	nav ul li a {
+		padding: 15px 10px;
+		margin: 0 5px;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.logo {
+		margin: 0;
+
+		img {
+			width: 220px;
+		}
+	}
 }

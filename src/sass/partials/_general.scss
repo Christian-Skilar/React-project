@@ -1,8 +1,27 @@
+body {
+	font-family: 'Poiret One';
+	background-image: url(../../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	color: white;
+}
+
 img {
 	width: 300px;
-	border-radius: 5px;
 }
 
 .container {
 	padding: 0;
+}
+
+b {
+	color: #75e016;
+}
+
+@media only screen and (max-width: 575px) {
+	.container {
+		padding: 20px;
+	}
 }

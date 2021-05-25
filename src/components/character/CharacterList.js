@@ -33,11 +33,13 @@ function CharacterList() {
 	}
 
 	return (
-		<div className="cards">
-			{character.map(function (characters) {
-				const { id, name, status, image } = characters;
-				return <CardLink key={id} id={id} name={name} status={status} image={image} />;
-			})}
+		<div className="container">
+			<div className="cards">
+				{character.map(function (characters) {
+					const { id, name, status, image } = characters;
+					return <CardLink key={id} id={id} name={name} status={status} image={image} />;
+				})}
+			</div>
 		</div>
 	);
 }

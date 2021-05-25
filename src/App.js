@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Container from "react-bootstrap/Container";
 import Navigation from "./components/layout/Nav"
 import Home from "./components/Home";
 import Contact from "./components/Contact";
+import About from "./components/About";
 import LoginPage from "./components/Login"
 import AdminPage from "./components/Admin"
 import CharacterDetail from "./components/Detail";
@@ -15,15 +15,14 @@ function App() {
         <Router>
           <Navigation />
 
-        <Container>
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/contact"><Contact /></Route>
+            <Route path="/about"><About /></Route>
             <Route path="/login"><LoginPage /></Route>
             <Route path="/admin"><AdminPage /></Route>
             <Route path="/detail/:id"><CharacterDetail /></Route>
           </Switch>
-        </Container>
       </Router>
     </AuthProvider>  
   );

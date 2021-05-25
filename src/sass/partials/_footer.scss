@@ -1,0 +1,44 @@
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	background: $dark-gray;
+	color: $light;
+	font-size: 20px;
+	padding: 50px 0 0 0;
+
+	h3 {
+		margin-bottom: 50px;
+		padding: 5px 0;
+		border-bottom: 1px solid #75e016;
+	}
+
+	b {
+		color: #75e016;
+	}
+
+	i {
+		font-size: 35px;
+		color: #75e016;
+		transition: 500ms;
+	}
+
+	i:hover {
+		transform: scale(1.4) rotate(360deg);
+	}
+}
+
+.copyright {
+	display: block;
+	width: 100%;
+	color: $light-gray;
+	background: #101010;
+	margin-top: 100px;
+	padding: 3px 0;
+	text-align: center;
+
+	h6 {
+		font-size: 15px;
+	}
+}

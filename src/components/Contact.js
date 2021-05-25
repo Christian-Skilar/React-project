@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import Heading from "../components/layout/Heading";
+import Footer from "../components/layout/Footer"
 
 export default  function Contact() {
 	const { register, handleSubmit, errors } = useForm();
@@ -14,6 +15,7 @@ export default  function Contact() {
         <>
         <Heading heading="Contact Page" />
 
+		<div className="form-container">
 		<form onSubmit={handleSubmit(onSubmit)}>
 			<input className="contact" placeholder="First Name" name="firstName" type="custom" ref={register({ required: true, minLength: 3 })} />
             {errors.firstName && <span className="error">Need at least 3 characters</span>}
@@ -37,7 +39,9 @@ export default  function Contact() {
 
 			<button>Send</button>
 		</form>
+		</div>
 
+		<Footer />
         </>
 	);
 }
